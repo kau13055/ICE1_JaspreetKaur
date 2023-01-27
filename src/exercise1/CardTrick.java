@@ -44,27 +44,21 @@ public class CardTrick {
         // If the guess is successful, invoke the printInfo() method below.
         
     private static void pickCard(){
-                boolean found = false;
-                
-
-                Scanner input = new Scanner(System.in);
+      
+	    boolean found = false;
+            Scanner input = new Scanner(System.in);
 
             System.out.println("\n\nSome points to Know before playing");
-        
-            System.out.println("\n\n\nRemember! \n You can choose any number from 1-13 where \n 11 is for Jack \n 12 is for Queen \n 13 is for King.");
+            System.out.println("\nRemember! \n You can choose any number from 1-13 where \n 11 is for Jack \n 12 is for Queen \n 13 is for King.");
             System.out.println(" \n To Choose from suit Select: \n 1 for Heart \n 2 for Diamond \n 3 for Spades \n 4 for Clubs");
-           
-            System.out.println("\n Lets Start the Game!\n\n");
+            System.out.println("\n Lets Start the Game!\n");
            
             System.out.print("Enter the card Number (1-13):  ");
             int number = input.nextInt();
             
-            System.out.print(" Enter the suit: ");
+            System.out.print("\nEnter the suit: ");
             int suit_Number = input.nextInt();
 
-            
-           
-            
            Card card1 = new Card(number,Card.SUITS[suit_Number - 1]);
 
            System.out.println("You picked " + card1 );
@@ -73,13 +67,13 @@ public class CardTrick {
                     found=true;
                     printInfo();
                     break;
-
-                }
+		}
            }
            
         if(!found){
               System.out.println("Soory, The card cannot found in hand");
-            }}
+            }
+    }
        
 
     /**
@@ -89,20 +83,20 @@ public class CardTrick {
      */
     private static void printInfo() {
     
-        System.out.println("Congratulations, you guessed right!");
+        System.out.println("\nCongratulations, you guessed right!");
         System.out.println();
         
-        System.out.println("My name is Paul Bonenfant");
+        System.out.println("My name is Jaspreet Kaur, you can call me as Jaspreet");
         
-         System.out.println("-- Be more active on LinkedIn");
-        System.out.println("-- Have a semester with no violations of academic integrity!");
+	System.out.println("My career ambitions:");
+	System.out.println("-- Be a good programmer");
+        System.out.println("-- To pass the semester with flying colors!");
 	System.out.println();	
 
         System.out.println("My hobbies:");
-        System.out.println("-- Investing");
+        System.out.println("-- Listen to music");
         System.out.println("-- Cooking");
         System.out.println("-- Reading/Watching TV");
-        System.out.println("-- Riding my motorcycle");
         System.out.println();
         
     
