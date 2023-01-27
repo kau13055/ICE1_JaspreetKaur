@@ -27,6 +27,7 @@ public class CardTrick {
             int value = (int) (Math.random() * 13) + 1;
             int suit = (int) (Math.random() * 4);
             hand[i] = new Card(value, Card.SUITS[suit]);
+           // System.out.println(hand[i]);
            
         }
               pickCard();
@@ -91,19 +92,17 @@ public class CardTrick {
         System.out.println("Congratulations, you guessed right!");
         System.out.println();
         
-        System.out.println("My name is Jaspreet Kaur, but you can call me Jaspreet");
-        System.out.println();
+        System.out.println("My name is Paul Bonenfant");
         
-        System.out.println("My career ambitions:");
-        System.out.println("-- To be a good programmer.");
-        System.out.println("-- Have passed first semester with good grades and want to pass other semester with flying colors!");
+         System.out.println("-- Be more active on LinkedIn");
+        System.out.println("-- Have a semester with no violations of academic integrity!");
 	System.out.println();	
 
         System.out.println("My hobbies:");
-        System.out.println("-- Listen to music");
+        System.out.println("-- Investing");
         System.out.println("-- Cooking");
         System.out.println("-- Reading/Watching TV");
-
+        System.out.println("-- Riding my motorcycle");
         System.out.println();
         
     
