@@ -81,7 +81,7 @@ public class CardTrick {
      * replace this information with your own.
      * @author Paul Bonenfant Jan 2022
      * 
-     * I am Done
+     *I am Done
      */
     private static void printInfo() {
     
